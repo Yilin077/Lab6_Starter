@@ -16,6 +16,8 @@ class RecipeCard extends HTMLElement {
 		// A3. Create a style element
 		const style = document.createElement('style');
 
+		style.textContent = `
+
 		// A4. TODO - Insert all of the styles from cardTemplate.html into the <style> element you just made (copy everything INSIDE the <style> tag>)
 		// A5. TODO - Append the <style> and <article> elements to the Shadow DOM
 	}
