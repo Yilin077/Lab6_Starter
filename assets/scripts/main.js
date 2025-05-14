@@ -27,7 +27,7 @@ function getRecipesFromStorage() {
 	// A9. TODO - Complete the functionality as described in this function
 	//           header. It is possible in only a single line, but should
 	//           be no more than a few lines.
-}
+
 
 /**
  * Takes in an array of recipes and for each recipe creates a
