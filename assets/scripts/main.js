@@ -69,6 +69,37 @@ function saveRecipesToStorage(recipes) {
  * <button>.
  */
 function initFormHandler() {
+	function initFormHandler() {
+  const form = document.querySelector('form');
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault(); // Prevent page reload
+    const formData = new FormData(form);
+    const recipeObject = {};
+    for (const [key, value] of formData.entries()) {
+      recipeObject[key] = value;
+    }
+
+    const recipeCard = document.createElement('recipe-card');
+    recipeCard.data = recipeObject;
+
+    const main = document.querySelector('main');
+    main.appendChild(recipeCard);
+
+    const recipes = getRecipesFromStorage();
+    recipes.push(recipeObject);
+    saveRecipesToStorage(recipes);
+
+    form.reset(); // Optional: reset form after submission
+  });
+
+  const clearButton = document.querySelector('button[type="button"]');
+  clearButton.addEventListener('click', () => {
+    localStorage.clear();
+    document.querySelector('main').innerHTML = '';
+  });
+}
+
 	// B2. TODO - Get a reference to the <form> element
 	// B3. TODO - Add an event listener for the 'submit' event, which fires when the
 	//            submit button is clicked
