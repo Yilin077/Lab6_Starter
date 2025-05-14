@@ -70,7 +70,6 @@ function saveRecipesToStorage(recipes) {
  */
 function initFormHandler() {
   const form = document.querySelector('form');
-
   form.addEventListener('submit', (event) => {
     event.preventDefault(); // Prevent page reload
     const formData = new FormData(form);
