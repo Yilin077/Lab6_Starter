@@ -57,6 +57,9 @@ function addRecipesToDocument(recipes) {
  */
 function saveRecipesToStorage(recipes) {
 	// EXPLORE - START (All explore numbers start with B)
+function saveRecipesToStorage(recipes) {
+  localStorage.setItem('recipes', JSON.stringify(recipes));
+}
 
 	// B1. TODO - Complete the functionality as described in this function
 	//            header. It is possible in only a single line, but should
