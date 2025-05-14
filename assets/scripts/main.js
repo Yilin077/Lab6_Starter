@@ -69,7 +69,6 @@ function saveRecipesToStorage(recipes) {
  * <button>.
  */
 function initFormHandler() {
-	function initFormHandler() {
   const form = document.querySelector('form');
 
   form.addEventListener('submit', (event) => {
@@ -118,4 +117,3 @@ function initFormHandler() {
 	// Steps B12 & B13 will occur inside the event listener from step B11
 	// B12. TODO - Clear the local storage
 	// B13. TODO - Delete the contents of <main>
-}
