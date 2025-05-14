@@ -13,7 +13,7 @@ class RecipeCard extends HTMLElement {
 		// A2. Create an <article> element
 		this.article = document.createElement('article');
 
-		// A3. Create a style element
+		  // A3. Create a style element
 		const style = document.createElement('style');
 
 		style.textContent = `
@@ -84,16 +84,15 @@ class RecipeCard extends HTMLElement {
                     overflow: hidden;
                     -webkit-line-clamp: 2;
                     -webkit-box-orient: vertical;
-                   }
+                  }
 
-                   p:not(.title),
-                     span,
-                     time {
-                     color: #70757A;
-                     font-size: 12px;
-                     }
-
-		// A4. TODO - Insert all of the styles from cardTemplate.html into the <style> element you just made (copy everything INSIDE the <style> tag>)
+                  p:not(.title),
+                  span,
+                  time {
+                    color: #70757A;
+                    font-size: 12px;
+                  }
+                  // A4. TODO - Insert all of the styles from cardTemplate.html into the <style> element you just made (copy everything INSIDE the <style> tag>)
 		// A5. TODO - Append the <style> and <article> elements to the Shadow DOM
 	}
 
