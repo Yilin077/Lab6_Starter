@@ -57,7 +57,6 @@ function addRecipesToDocument(recipes) {
  */
 function saveRecipesToStorage(recipes) {
 	// EXPLORE - START (All explore numbers start with B)
-function saveRecipesToStorage(recipes) {
   localStorage.setItem('recipes', JSON.stringify(recipes));
 }
 
