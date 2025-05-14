@@ -28,7 +28,6 @@ function getRecipesFromStorage() {
 	//           header. It is possible in only a single line, but should
 	//           be no more than a few lines.
 
-
 /**
  * Takes in an array of recipes and for each recipe creates a
  * new <recipe-card> element, adds the recipe data to that card
