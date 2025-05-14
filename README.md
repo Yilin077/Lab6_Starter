@@ -1,2 +1,2 @@
 # Lab 6
-https://yilin077.github.io/Lab6
+https://yilin077.github.io/Lab6_Starter
