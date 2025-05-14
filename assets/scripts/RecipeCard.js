@@ -11,7 +11,7 @@ class RecipeCard extends HTMLElement {
 		this.shadow = this.attachShadow({ mode: 'open' });
 
 		// A2. Create an <article> element
-		this.article = document.createElement('article');
+		const article = document.createElement('article');
 
 		  // A3. Create a style element
 		const style = document.createElement('style');
