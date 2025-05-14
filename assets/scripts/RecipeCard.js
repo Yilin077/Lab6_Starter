@@ -92,7 +92,8 @@ class RecipeCard extends HTMLElement {
                     color: #70757A;
                     font-size: 12px;
                   }
-                  // A4. TODO - Insert all of the styles from cardTemplate.html into the <style> element you just made (copy everything INSIDE the <style> tag>)
+                `;
+		this.shadow.append(style, article);
 		// A5. TODO - Append the <style> and <article> elements to the Shadow DOM
 	}
 
